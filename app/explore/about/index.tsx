@@ -2,7 +2,10 @@ import { ScrollView, StyleSheet, Text } from "react-native";
 
 export default function AboutScreen() {
   return (
-    <ScrollView contentContainerStyle={styles.container}>
+    <ScrollView
+      style={{ flex: 1, backgroundColor: "#8BC34A" }} // Fond complet
+      contentContainerStyle={styles.container}        // Layout interne
+    >
       <Text style={styles.title}>À propos</Text>
       <Text style={styles.text}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -32,7 +35,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 16,
     lineHeight: 24,
-    color: "#444",
+    color: "#fff",
     marginBottom: 16,
   },
 });

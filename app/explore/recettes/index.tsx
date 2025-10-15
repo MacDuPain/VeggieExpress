@@ -43,6 +43,7 @@ const recipes = [
 export default function RecipesScreen() {
   return (
     <ScrollView
+      style={{ flex: 1, backgroundColor: "#8BC34A" }} // Fond complet
       contentContainerStyle={{
         flexDirection: "row",
         flexWrap: "wrap",

@@ -13,7 +13,7 @@ export default function HomeScreen() {
 
       {/* Bouton vers la page des recettes */}
       <View style={styles.linkContainer}>
-        <Link href="/recipes" asChild>
+        <Link href="/recettes" asChild>
           <TouchableOpacity style={styles.button}>
             <Text style={styles.buttonText}>🌯 Voir toutes les recettes</Text>
           </TouchableOpacity>

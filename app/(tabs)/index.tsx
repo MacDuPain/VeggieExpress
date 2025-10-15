@@ -1,5 +1,4 @@
-import { Link } from 'expo-router';
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Image, StyleSheet, View } from 'react-native';
 
 export default function HomeScreen() {
   return (
@@ -10,15 +9,6 @@ export default function HomeScreen() {
         style={styles.banner}
         resizeMode="cover"
       />
-
-      {/* Bouton vers la page des recettes */}
-      <View style={styles.linkContainer}>
-        <Link href="/recettes" asChild>
-          <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>🌯 Voir toutes les recettes</Text>
-          </TouchableOpacity>
-        </Link>
-      </View>
     </View>
   );
 }
@@ -32,7 +22,7 @@ const styles = StyleSheet.create({
   },
   banner: {
     width: '100%',
-    height: '80%',
+    height: '100%',
   },
   linkContainer: {
     position: 'absolute',

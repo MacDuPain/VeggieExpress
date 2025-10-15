@@ -43,7 +43,7 @@ export default function ExploreScreen() {
         {/* Bouton Recettes */}
         <TouchableOpacity
           style={styles.menuButton}
-          onPress={() => router.push("/recettes")}
+          onPress={() => router.push("/explore/recettes")}
         >
           <Image
             source={require("@/assets/images/salad.png")}
@@ -55,7 +55,7 @@ export default function ExploreScreen() {
         {/* Bouton À propos */}
         <TouchableOpacity
           style={styles.menuButton}
-          onPress={() => router.push("/about")}
+          onPress={() => router.push("/explore/about")}
         >
           <Image
             source={require("@/assets/images/react-logo.png")}
